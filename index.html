@@ -1,225 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Freelancers</title>
-<style>
-body {
-    font-family: "Lato", sans-serif;
-    margin: 0px 0px;
-}
-.menu{float:right;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-.menu{padding:30px;}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    font-size: 36px;
-    margin-right: 50px;
-}
-
-
-.images {
-    vertical-align: middle;
-    display: table-cell;
-    margin-right: 4em;
-}
-.text {
-    vertical-align: middle;
-    display: table-cell;
-  padding:30px;
-    margin: 50px auto;
-}
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;z-index: 100;}
-  .sidenav a {font-size: 18px;}
-}
-.p1{
-  width: 1500px;
-  height: 550px;
-  
-background-image:url("s.jpg"); 
-padding: 25px;
-
-
-}
-
-.p2{
-  width: 100%;
-  height: 650px;
- 
-  
-  display: table;
-  background-image:url("s2.jpg");
-}.p4{
-  width: 100%;
-  height: 650px;
-  background-image:url("s.jpg"); 
-  padding: 30px;
-  display: table;
-
-
-}
-.left{
-  float:left;
-  margin: 50px;
-  
-  padding:80px 25px 80px 150px ;
-}
-.right
-{float:right;
-margin:50px;
-padding:80px 25px 80px 150px ;}
-#d
-{margin-left:70px;}
-.inputs{
-  padding: 10px 15px;
- width: 100%;
-border-radius:5px;
-}
-.inputs:focus{
-  background-color: black;
-  color: white;
-  border-color: black;
-}
-.p5{
-  width: 100%;
-  height: 650px;
- 
-  
-  display: table;
-  background-image:url("s2.jpg");
-}
-.b{
-  margin:10px;
-  background-color:grey;
-  border-radius: 10px;
-  padding: 5px; 
-  color: white;
-}
-.tags{
-  font-weight: bold;
-  font-size: 20px;
-  color:grey;
-}
-img{-webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */    
-    -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 3s;   
-    animation-fill-mode: both;}
-
-    @-webkit-keyframes example {
-    from {top:200px; }
-    to {top: 0px; }
-}
-
-@keyframes example {
-    from {top:200px; }
-    to {top: 0px; }
-}
-
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Shartel Group</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/jpg" href="images/icon.jpg" />
+<link rel="stylesheet" type="text/css" href="main.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<header>
+<div class="header">
+<img src="images\logo.jpg">
+<ul>
+	<li><a href="#Home">Home</a></li>
+	<li><a href="#About">About us</a></li>
+	<li><a href="#Projects">Projects</a></li>
+	<li><a href="#Contact">Contact us</a></li>
+</ul>
+</div>
+</header>
+<div class="container-fluid Home text-center" id="Home">
+	<div class="main text-center"><h1>SHARTEL GROUP</h1>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#About">About</a>
-  <a href="#Clients">Clients</a>
-  <a href="#login">Login</a>
-</div>
-<div class="menu">
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-</div>
-<div class="pages">
-<div class="p1">
-  <div>
-  <img src="images.png" style="position: absolute;"></div>
-   <div class="left">
-   <span ><img class="images" src="s3.png" /></span></div><div class="right">
-<span class="text">
-    <p class="tags">Our basic media</p>
-    <p>this site is created to show our media and</p>
-    <p>diffrent multimedia connections</p>
-    
-</span>
-</div>
-</div>
-<div id="About" class="p2">
-  <div class="right">
-   <span><img class="images" src="s3.png" /></span></div><div class="left">
-<span class="text">
-    <p class="tags">Full youtube accesiblity</p>
-    <p>This allow the users to use functionality</p>
-    <p>of various other streaming sites</p>
-    
-</span>
-</div>
-</div>
-<div id="Clients" class="p4">
-   
- <div class="left">
-   <span><img class="images" src="ss.jpg" /></span></div><div class="right">
-<span class="text">
-    <p class="tags">Multimedia accesiblity</p>
-    <p>We have many contacts with connections to</p>
-    <p>well known multimedia websites</p>
-    
-</span>
-</div>
-</div>
-<div id="login" class="p5">
-<div class="left">
-<p class="tags">NAME</p>
-<input type="text" id="s" class="inputs" placeholder="Type your name"> 
-<p class="tags">EMAIL ADDRESS</p>
-<input type="text" id="s" class="inputs" placeholder="Type your email address"> 
-<p class="tags">PHONE NUMBER</p>
-<input type="text" id="s" class="inputs" placeholder="Type a phone number"><br> 
- <button  class="b" script="width:250px;"> Submit</button>
- <button  class="b" script="width:250px;">login with google</button>
 </div>
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
+</div>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-$('a[href^="#"]').on('click', function(event) {
+<div class="container-fluid About" id="About">
+	<div class="col-sm-6 ab">
+	<h1>About us</h1>
+	<p>
+		We hold International and Indian experties in feilds of Architecture Interiors and Landscape <br>
+		<br>Our experties include projects in :-<br>
+     <ul>
+	     <li>3,4,5 Star Rated Hotels,Resorts and Hotel Apartments</li>
+	     <li>Showrooms and Shop Interiors</li>
+	     <li>Entertainment,Tourism and Educational/Sports complex</li>
+	     <li>Residential complex</li>
+	     <li>Residential Interiors</li>
+     </ul>
+	</p>
+</div>
+</div>
+
+<div class="container-fluid Projects" id="Projects">
+	  <h1 class="margin">Projects</h1><br>
+  <div class="row">
+    <div class="col-sm-4 pros">
+    	<a href="">
+      <h4>Hotels and Resorts</h4>
+      <img src="images/Slide6.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-4 pros"> 
+      <a href=""><h4>Shops and Showrooms</h4>
+      <img src="images/Slide4.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-4 pros"> 
+   <a href=""><h4>Entertainment and Tourism</h4>
+      <img src="images/slide8.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid Contact" id="Contact">
+	<div class="col-sm-6 goo">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d639.5092383488964!2d72.84539976422495!3d19.03209162647197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ced48627122b%3A0xee2a9435b0c15df8!2sShanti+Society!5e0!3m2!1sen!2sin!4v1512530650413" width="600" height="450" frameborder="0" style="padding-top: 30px;" allowfullscreen></iframe>
+	</div>
+	<div class="col-sm-6 infoc">
+	<h1>Contact us:</h1>
+	<p> D-13,Shanti Society,Mogul lane,Mahim,Mumbai-400016.<br>
+		Number: +91-9167098288/022-24221292<br>Email: telangvinay@gmail.com <br><a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://twitter.com" ><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<br></p>
+	</div>
+
+</div>
+
+<footer>
+	<div class="s">
+	<img src="images\logo.jpg"></div>
+</footer>
+<script type="text/javascript">
+	$('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
         event.preventDefault();
@@ -229,6 +93,6 @@ $('a[href^="#"]').on('click', function(event) {
     }
 });
 </script>
-     
 </body>
-</html> 
+
+</html>
