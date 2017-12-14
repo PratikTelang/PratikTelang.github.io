@@ -14,16 +14,19 @@
 <header>
 <div class="header">
 <img src="images\logo.jpg">
-<ul>
-	<li><a href="#Home">Home</a></li>
-	<li><a href="#About">About us</a></li>
-	<li><a href="#Projects">Projects</a></li>
-	<li><a href="#Contact">Contact us</a></li>
-</ul>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#About">About</a>
+  <a href="#Projects">Projects</a>
+  <a href="#Contact">Contact us</a>
+</div>
+<div class="menu">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
 </div>
 </header>
 <div class="container-fluid Home text-center" id="Home">
-	<div class="main text-center"><h1>SHARTEL GROUP</h1>
+	<div class="main text-center">Shartel Group
 
 </div>
 
@@ -52,22 +55,24 @@
     <div class="col-sm-4 pros">
     	<a href="">
       <h4>Hotels and Resorts</h4>
-      <img src="images/Slide6.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+      <img src="images/Slide6.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4 pros"> 
       <a href=""><h4>Shops and Showrooms</h4>
-      <img src="images/Slide4.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+      <img src="images/Slide4.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4 pros"> 
    <a href=""><h4>Entertainment and Tourism</h4>
-      <img src="images/slide8.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+      <img src="images/slide8.JPG" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
   </div>
 </div>
 
 <div class="container-fluid Contact" id="Contact">
 	<div class="col-sm-6 goo">
+		<div class="map-responsive">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d639.5092383488964!2d72.84539976422495!3d19.03209162647197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ced48627122b%3A0xee2a9435b0c15df8!2sShanti+Society!5e0!3m2!1sen!2sin!4v1512530650413" width="600" height="450" frameborder="0" style="padding-top: 30px;" allowfullscreen></iframe>
+	</div>
 	</div>
 	<div class="col-sm-6 infoc">
 	<h1>Contact us:</h1>
@@ -84,6 +89,24 @@
 </footer>
 <script type="text/javascript">
 	$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
+</script>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+$('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
         event.preventDefault();
