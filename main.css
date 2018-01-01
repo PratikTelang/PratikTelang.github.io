@@ -95,59 +95,7 @@ body{
     font-size: 15px;
 }
 
-.header{list-style-type: none;
-    
-    background-color:rgb(89,89,91);
-  
-    width: 100%;
-    
 
-}
-.header img{
-    max-height: 70px;
-}
-.menu{float:right;
-    color: white;
-
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-.menu{padding:15px;}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-    text-decoration: none;
-}
-.sidenav a:visited, a:focus, a:active {
-   
-    text-decoration: none;
-}
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    font-size: 36px;
-    margin-right: 50px;
-}
 
 
 .footer{
@@ -178,14 +126,20 @@ body{
 }
 .Home{
     background-image:url("images/homeb.jpg");
-    height: 550px;
-    padding-top: 160px;
+    height: 750px;
+    padding-top: 250px;
 }
-
+.scroll{
+	padding-top:240px;
+	float:bottom;
+	color:white;
+	text-shadow: 1px 1px black;
+	}
 .Projects{
     background-color:rgb(89,89,91); 
-    padding: 30px;
+    padding:50px 30px;
     color: white;
+	
 }
 .Projects a{
     text-decoration: none;
@@ -194,7 +148,6 @@ body{
 .Projects a:hover {
     text-decoration: none;
     color:rgb(229, 59, 87);
-    background-color: grey;
 }
 .map-responsive{
     overflow:hidden;
@@ -222,6 +175,7 @@ color:rgb(89,89,91);
 
 }
 .About{
+	padding:50px 0px;
     margin: 30px;
     color: rgb(89,89,91);
 }
@@ -231,7 +185,14 @@ color:rgb(89,89,91);
     color: white;
     font-family: "Brush Script MT", cursive;
     font-size: 80px;
+	text-shadow: 1px 1px black;
 }
+.pro{
+	    font-family: "Brush Script MT", cursive;
+		color: white;
+		font-size: 50px;
+		
+	}
 .Home{
     vertical-align: center
 
@@ -249,3 +210,160 @@ color:rgb(89,89,91);
     width:100%;
     position:absolute;
 }
+.hs{
+  color: white;
+  font-size: 50px;
+  margin-bottom: 1em;
+ padding-left:15px;
+ font-family: "Brush Script MT", cursive;
+}
+
+	
+	
+.button {
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: right;
+  background-color:rgb(89,89,91);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.slides{
+	padding:20px;}
+.sli{
+	padding:20px;
+	border-radus:20px;
+	
+		}
+.sli:hover{
+	background-color:grey;
+	border-radus:20px;
+}
+
+
+.container {
+  width: 100%;
+  min-width: 740px;
+  margin: 0 auto;
+}
+
+
+
+img.logo {
+	float: left;
+	top:0;
+	left:0;
+	height:70px;
+}
+
+.navbar-nav a:hover{
+background-color:white;
+}
+navbar{
+	background-color: rgb(89,89,91);
+	border:none;
+	margin:none;
+}
+
+/* Header */
+
+header {
+	background-color: rgb(89,89,91);
+
+	float: left;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Amaranth', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+header a:focus{
+	color: #3d3d3d;
+	text-decoration:none;
+}
+header a:hover{
+	color: #3d3d3d;
+	text-decoration:none;
+}
+header li {
+	margin-right: 30px;
+}
+
+/* header large */
+header.large {
+	height: 71px;
+	background-color:transparent;
+}
+header.large img {
+  margin-left:0px;
+}
+header.large li {
+	padding: 10px;
+}
+
+/* header small */
+
+header.small {
+	height: 45px;
+}
+header.small img {
+	height:53px;
+}
+header.small li {
+	padding: 0px;
+	margin: 2px;
+}
+
+/* Transitions */
+
+header,
+nav,
+a,
+img,
+li {
+	transition: .7s all;
+	-moz-transition: .7s all;
+	-webkit-transition: .7s all;
+	-o-transition: .7s all;
+}
+#myNavbar li{
+	font-weight:bold;    }
